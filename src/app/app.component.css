@@ -1,0 +1,102 @@
+/* Основные стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #2c3e50;
+  }
+  
+  /* Стили для списка дел */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    flex-grow: 1; /* Занимает все оставшееся пространство */
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Стили для задачи, если она выполнена */
+  .completed {
+    text-decoration: line-through;
+    color: #95a5a6;
+  }
+  
+  /* Кнопка удаления */
+  .delete-btn {
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Стили для футера с полем ввода и кнопкой */
+  .todo-footer {
+    position: fixed;
+    bottom: 50px;  /* Отступ от нижней границы экрана */
+    left: 50%;
+    transform: translateX(-50%);  /* Центрируем по горизонтали */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;  /* Отступ между полем ввода и кнопкой */
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .todo-footer input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .todo-footer button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .todo-footer button:hover {
+    background-color: #2980b9;
+  }
+  
